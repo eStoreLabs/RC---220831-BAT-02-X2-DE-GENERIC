@@ -843,4 +843,37 @@
   #glo-hyper-uniq.glo-hyper-uniq .es-cross__card {
     width: auto;
   }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-right.png") no-repeat center;
+  transform: rotate(180deg);
+}
+
+.swiper-button-next {
+  right: 0;
+  background: url("../img/arrow-right.png") no-repeat center;
+}
+
+.swiperParts {
+  position: relative;
+}
+
+.swiperParts-button-prev {
+  top: 50%;
+  left: 0;
+  background: url("../img/arrow-right.png") no-repeat center;
+  transform: rotate(180deg);
+}
+
+.swiperParts-button-next {
+  top: 50%;
+  right: 0;
+  background: url("../img/arrow-right.png") no-repeat center;
 }/*# sourceMappingURL=style.css.map */
