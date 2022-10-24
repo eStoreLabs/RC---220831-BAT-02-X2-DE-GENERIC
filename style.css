@@ -161,6 +161,9 @@
   left: 2%;
   max-width: 40px;
 }
+#glo-hyper-x2.glo-hyper-x2 .es-kv__img--desktop {
+  display: none;
+}
 #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img {
   position: relative;
   top: -12px;
@@ -206,6 +209,12 @@
 #glo-hyper-x2.glo-hyper-x2 .es-kv__bg {
   position: absolute;
   max-width: 79%;
+}
+#glo-hyper-x2.glo-hyper-x2 .es-kv__bg--desktop {
+  display: none;
+}
+#glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+  display: none;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__container {
   background: url("./img/benefits-bg.png") center 80px/contain no-repeat;
@@ -540,91 +549,39 @@
     margin-left: 10px;
   }
 }
+@media screen and (min-width: 375px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    margin-left: 15%;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__footer {
+    bottom: -70px;
+  }
+}
 @media screen and (min-width: 426px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-info__title {
-    font-size: 20px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 150px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer {
-    font-size: 10px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
-    font-size: 20px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item {
-    font-size: 15px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item--strong {
-    font-size: 16px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__title {
-    font-size: 20px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__title {
-    font-size: 20px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__footer {
+    bottom: -125px;
   }
 }
 @media screen and (min-width: 468px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    font-size: 25px;
+  }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__container {
     gap: 60px;
   }
 }
 @media screen and (min-width: 500px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-info {
-    margin-top: -50px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    width: 250px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__title {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__list {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-    font-size: 15px;
-    list-style-type: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__icon {
-    display: block;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    max-width: 375px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text {
-    text-align: center;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text--short {
-    max-width: 150px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
-    margin-bottom: 50px;
-    padding-top: 200px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title br {
-    display: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list {
-    max-width: 330px;
-    margin-bottom: 60px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
-    font-size: 10px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__content {
-    padding-bottom: 100px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
-    font-size: 16px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item-title {
-    font-size: 18px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 530px) {
@@ -633,33 +590,14 @@
   }
 }
 @media screen and (min-width: 576px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-info__list {
-    gap: 20px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 200px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer,
-#glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer {
-    font-size: 12px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    width: 300px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits .es-info__disclaimer,
-#glo-hyper-x2.glo-hyper-x2 .es-info .es-info__disclaimer {
-    text-align: center;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__additional-description br:nth-child(2n) {
-    display: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__additional-text {
-    display: inline-block;
-    margin-top: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .additional-description {
-    max-width: 83%;
-    font-size: 16px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .additional-description br:nth-child(1) {
-    display: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .button-primary {
-    font-size: 16px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 650px) {
@@ -668,6 +606,32 @@
   }
 }
 @media screen and (min-width: 700px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__logo {
+    width: 160px;
+    max-width: none;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img {
+    width: 130px;
+    max-width: none;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__footer {
+    width: 150px;
+    bottom: -60px;
+    max-width: none;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
+    margin-left: 10px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    margin-top: 125px;
+    width: 400px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title br {
+    display: none;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title span {
+    display: inline;
+  }
   #glo-hyper-x2.glo-hyper-x2 .es-info__title,
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__title,
 #glo-hyper-x2.glo-hyper-x2 .es-design__title,
@@ -682,114 +646,33 @@
   #glo-hyper-x2.glo-hyper-x2 .es-cross__container {
     gap: 20px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
-    padding-top: 100px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__content {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: -145px;
-    background-image: url("./img/benefits-2-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__img {
-    display: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__img--desktop {
-    display: block;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__img {
-    display: none;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__img--desktop {
-    display: block;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__title {
-    margin-top: 0;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: -50px;
-    padding: 40px;
-    min-width: 90%;
-    max-width: 1000px;
-    background-color: #f6f6f6;
-    z-index: 1;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 750px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-info {
-    margin-top: 0;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__content {
-    margin-top: -75px;
-  }
 }
 @media screen and (min-width: 768px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-info__list {
-    gap: 80px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__header {
+    padding-top: 40px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item {
-    width: auto;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    margin-bottom: 10px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text {
-    font-size: 22px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle {
+    display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text--short {
-    min-width: 200px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__icon {
-    width: 126px;
-    height: 126px;
-    margin-bottom: 45px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list {
-    max-width: 400px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item {
-    font-size: 18px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item--strong {
-    font-size: 20px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__img {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__bg {
     display: none;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__img--desktop {
-    max-width: 250px;
-    height: 250px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__bg--desktop {
+    position: absolute;
     display: block;
+    max-width: 70%;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item {
-    flex-direction: column;
-    min-width: 27%;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-    min-height: 260px;
-    max-width: 245px;
-    text-align: center;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+    position: absolute;
+    display: block;
+    right: 22%;
+    top: 10%;
+    max-width: 40%;
   }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__img {
     display: none;
@@ -799,186 +682,64 @@
   }
 }
 @media screen and (min-width: 900px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
-    padding-top: 270px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 260px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__content {
-    margin-top: -250px;
-    min-height: 900px;
-    background-position: right;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    width: 500px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list {
-    max-width: 500px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design {
-    margin-top: -100px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1000px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-components__container {
-    gap: 20px;
-    background: #fff;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 300px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item {
-    max-width: 300px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    width: 550px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item-wrapper {
-    width: 100%;
-    min-height: 242px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+    font-size: 35px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__title {
-    font-size: 40px;
-    line-height: 1;
-    margin-bottom: 75px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle {
+    font-size: 18px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__img--desktop {
-    width: 100%;
-    height: 242px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__logo {
+    top: 10px;
+    left: 4%;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item-title {
-    font-size: 28px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
+    display: none;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item-title--small {
-    font-size: 24px;
-    max-width: 100%;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__img--desktop {
+    display: block;
   }
-  #glo-hyper-x2.glo-hyper-x2 .additional-description {
-    font-size: 20px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img {
+    width: 188px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__player {
-    max-width: 1000px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__wrapper {
-    margin-bottom: 100px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__additional {
-    margin-bottom: 92px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__additional-description {
-    max-width: 81%;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__additional-text {
-    margin-top: 60px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__footer {
+    width: 200px;
+    bottom: -130px;
+    right: 3%;
   }
 }
 @media screen and (min-width: 1300px) {
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__content {
-    padding: 0 52px;
-    margin-top: -308px;
-    min-height: 1100px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv {
+    margin-bottom: 400px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
-    padding-top: 322px;
-    margin-bottom: 77px;
-    font-size: 40px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+    right: 22%;
+    top: 12%;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list {
-    max-width: 700px;
-    padding-left: 16px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item {
-    font-size: 28px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item--strong {
-    font-size: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item:not(:last-child) {
-    margin-bottom: 34px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__item::marker {
-    font-size: 25px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
-    margin-left: -14px;
-    font-size: 18px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-kv__content {
-    max-width: 600px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__container {
+    margin-top: 172px;
+    width: 775px;
   }
   #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
-    max-width: 460px;
-    font-size: 38px;
-    margin-bottom: 25px;
+    font-size: 52px;
   }
-  #glo-hyper-x2.glo-hyper-x2 .es-kv__description {
-    font-size: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info {
-    padding-bottom: 115px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__title {
-    margin-left: -26px;
-    margin-bottom: 59px;
-    font-size: 40px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__content {
-    margin-top: -33px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__list {
-    gap: 20px;
-    margin-bottom: 86px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item {
-    width: 436px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text {
-    line-height: 1.15;
-    font-size: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__item-text--short {
-    min-width: 300px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__icon {
-    margin-bottom: 37px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 18px;
-    text-align: center;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer--short {
-    display: inline-block;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design {
-    margin-top: -51px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__title {
-    margin-bottom: 40px;
-    font-size: 40px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
-    font-size: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__description p {
-    padding-top: 7px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-design__content {
-    margin-top: -82px;
-    padding: 80px;
-    min-width: auto;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__container {
-    gap: 0;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__item {
-    min-width: 250px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-components__additional {
-    margin-bottom: 98px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .es-video__image-icon {
-    width: 106px;
-    height: 106px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .additional-description {
-    margin-bottom: 50px;
-    font-size: 30px;
-  }
-  #glo-hyper-x2.glo-hyper-x2 .button-primary {
-    padding: 16px 100px;
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle {
     font-size: 26px;
   }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop {
@@ -1005,6 +766,16 @@
   }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__card {
     width: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+    right: 24%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+    right: 27%;
   }
 }
 

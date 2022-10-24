@@ -218,6 +218,10 @@ $secondary: #f6f6f6;
     }
     &__img {
       @extend %img;
+
+      &--desktop {
+        display: none;
+      }
     }
     &__title-img {
       position: relative;
@@ -271,6 +275,15 @@ $secondary: #f6f6f6;
       position: absolute;
       @extend %img;
       max-width: 79%;
+
+      &--desktop {
+        display: none;
+      }
+    }
+    &__packshot {
+      &--desktop {
+        display: none;
+      }
     }
   }
 
@@ -690,45 +703,37 @@ $secondary: #f6f6f6;
   }
 
   @media screen and (min-width: 375px) {
+    .es-kv {
+      margin-bottom: 100px;
+
+      &__container {
+        margin-left: 15%;
+      }
+
+      &__footer {
+        bottom: -70px;
+      }
+    }
   }
 
   @media screen and (min-width: 426px) {
-    .es-info {
-      &__title {
-        font-size: 20px;
-      }
-
-      &__disclaimer {
-        font-size: 10px;
-      }
-    }
-
-    .es-benefits {
-      &__title {
-        font-size: 20px;
-      }
-      &__item {
-        font-size: 15px;
-        &--strong {
-          font-size: 16px;
-        }
-      }
-    }
-
-    .es-design {
-      &__title {
-        font-size: 20px;
-      }
-    }
-
-    .es-components {
-      &__title {
-        font-size: 20px;
+    .es-kv {
+      margin-bottom: 150px;
+      &__footer {
+        bottom: -125px;
       }
     }
   }
 
   @media screen and (min-width: 468px) {
+    .es-kv {
+      &__container {
+        // width: auto;
+      }
+      &__title {
+        font-size: 25px;
+      }
+    }
     .es-cross {
       &__container {
         gap: 60px;
@@ -737,70 +742,13 @@ $secondary: #f6f6f6;
   }
 
   @media screen and (min-width: 500px) {
-    .es-info {
-      margin-top: -50px;
+    .es-kv {
+      &__container {
+        width: 250px;
+      }
+
       &__title {
-        margin-bottom: 50px;
-        text-align: center;
-      }
-      &__list {
-        padding-left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 25px;
-        font-size: 15px;
-        list-style-type: none;
-      }
-      &__icon {
-        display: block;
-      }
-      &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 125px;
-        max-width: 375px;
-      }
-      &__item-text {
-        text-align: center;
-        &--short {
-          max-width: 150px;
-        }
-      }
-    }
-
-    .es-benefits {
-      &__title {
-        margin-bottom: 50px;
-        padding-top: 200px;
-        br {
-          display: none;
-        }
-      }
-      &__list {
-        max-width: 330px;
-        margin-bottom: 60px;
-      }
-      &__disclaimer {
-        font-size: 10px;
-      }
-      &__content {
-        padding-bottom: 100px;
-      }
-    }
-
-    .es-design {
-      &__description {
-        font-size: 16px;
-      }
-    }
-
-    .es-components {
-      &__item-title {
-        font-size: 18px;
+        font-size: 26px;
       }
     }
   }
@@ -814,46 +762,16 @@ $secondary: #f6f6f6;
   }
 
   @media screen and (min-width: 576px) {
-    .es-info {
-      &__list {
-        gap: 20px;
-      }
-    }
+    .es-kv {
+      margin-bottom: 200px;
 
-    .es-benefits,
-    .es-info {
-      &__disclaimer {
-        font-size: 12px;
+      &__container {
+        width: 300px;
       }
-      .es-info {
-        &__disclaimer {
-          text-align: center;
-        }
-      }
-    }
 
-    .es-video {
-      &__additional-description {
-        br:nth-child(2n) {
-          display: none;
-        }
+      &__title {
+        font-size: 26px;
       }
-      &__additional-text {
-        display: inline-block;
-        margin-top: 30px;
-      }
-    }
-
-    .additional-description {
-      max-width: 83%;
-      font-size: 16px;
-      br:nth-child(1) {
-        display: none;
-      }
-    }
-
-    .button-primary {
-      font-size: 16px;
     }
   }
 
@@ -866,6 +784,37 @@ $secondary: #f6f6f6;
   }
 
   @media screen and (min-width: 700px) {
+    .es-kv {
+      &__logo {
+        width: 160px;
+        max-width: none;
+      }
+      &__title-img {
+        width: 130px;
+        max-width: none;
+      }
+      &__footer {
+        width: 150px;
+        bottom: -60px;
+        max-width: none;
+      }
+      &__img {
+        margin-left: 10px;
+      }
+      &__container {
+        margin-top: 125px;
+        width: 400px;
+      }
+      &__title {
+        & br {
+          display: none;
+        }
+        & span {
+          display: inline;
+        }
+      }
+    }
+
     .es-info,
     .es-benefits,
     .es-design,
@@ -885,139 +834,43 @@ $secondary: #f6f6f6;
         gap: 20px;
       }
     }
-
-    .es-benefits {
-      &__title {
-        padding-top: 100px;
-      }
-      &__content {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: -145px;
-        background-image: url('./img/benefits-2-desktop.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      &__img {
-        display: none;
-        &--desktop {
-          display: block;
-        }
-      }
-    }
-
-    .es-design {
-      &__img {
-        display: none;
-        &--desktop {
-          display: block;
-        }
-      }
-      &__title {
-        margin-top: 0;
-      }
-      &__content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: -50px;
-        padding: 40px;
-        min-width: 90%;
-        max-width: 1000px;
-        background-color: $secondary;
-        z-index: 1;
-      }
-      &__description {
-        text-align: center;
-      }
-    }
   }
 
   @media screen and (min-width: 750px) {
-    .es-info {
-      margin-top: 0;
-      &__content {
-        margin-top: -75px;
-      }
-    }
   }
 
   @media screen and (min-width: 768px) {
-    .es-info {
-      &__list {
-        gap: 80px;
+    .es-kv {
+      &__header {
+        padding-top: 40px;
       }
-
-      &__item {
-        width: auto;
+      &__title {
+        margin-bottom: 10px;
       }
-
-      &__item-text {
-        font-size: 22px;
-
-        &--short {
-          min-width: 200px;
-        }
-      }
-
-      &__icon {
-        width: 126px;
-        height: 126px;
-        margin-bottom: 45px;
-      }
-    }
-
-    .es-benefits {
-      &__list {
-        max-width: 400px;
-      }
-      &__item {
-        font-size: 18px;
-
-        &--strong {
-          font-size: 20px;
-        }
-      }
-    }
-
-    .es-components {
-      &__container {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      &__img {
-        display: none;
-        &--desktop {
-          max-width: 250px;
-          height: 250px;
-          display: block;
-        }
-      }
-
-      &__item {
-        flex-direction: column;
-        min-width: 27%;
-      }
-
-      &__item-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex: 1;
-        min-height: 260px;
-        max-width: 245px;
+      &__subtitle {
+        display: block;
         text-align: center;
+        font-size: 14px;
+      }
+      &__bg {
+        display: none;
+
+        &--desktop {
+          position: absolute;
+          display: block;
+          max-width: 70%;
+        }
+      }
+      &__packshot {
+        &--desktop {
+          position: absolute;
+          display: block;
+          right: 22%;
+          top: 10%;
+          max-width: 40%;
+        }
       }
     }
-
     .es-cross {
       &__img {
         display: none;
@@ -1029,242 +882,75 @@ $secondary: #f6f6f6;
   }
 
   @media screen and (min-width: 900px) {
-    .es-benefits {
-      &__title {
-        padding-top: 270px;
-      }
-      &__content {
-        margin-top: -250px;
-        min-height: 900px;
-        background-position: right;
-      }
-      &__list {
-        max-width: 500px;
-      }
-    }
+    .es-kv {
+      margin-bottom: 260px;
 
-    .es-design {
-      margin-top: -100px;
+      &__container {
+        width: 500px;
+      }
+      &__title {
+        font-size: 30px;
+      }
     }
   }
 
   @media screen and (min-width: 1000px) {
-    .es-components {
+    .es-kv {
+      margin-bottom: 300px;
+
       &__container {
-        gap: 20px;
-        background: #fff;
-      }
-      &__item {
-        max-width: 300px;
-      }
-      &__item-wrapper {
-        width: 100%;
-        min-height: 242px;
+        width: 550px;
       }
       &__title {
-        font-size: 40px;
-        line-height: 1;
-        margin-bottom: 75px;
+        font-size: 35px;
+      }
+      &__subtitle {
+        font-size: 18px;
       }
 
+      &__logo {
+        top: 10px;
+        left: 4%;
+      }
       &__img {
+        display: none;
+
         &--desktop {
-          width: 100%;
-          height: 242px;
-          object-fit: cover;
+          display: block;
         }
       }
-
-      &__item-title {
-        font-size: 28px;
-
-        &--small {
-          font-size: 24px;
-          max-width: 100%;
-        }
+      &__title-img {
+        width: 188px;
       }
-    }
-
-    .additional-description {
-      font-size: 20px;
-    }
-
-    .es-video {
-      &__player {
-        max-width: 1000px;
-      }
-
-      &__wrapper {
-        margin-bottom: 100px;
-      }
-
-      &__additional {
-        margin-bottom: 92px;
-      }
-
-      &__additional-description {
-        max-width: 81%;
-      }
-
-      &__additional-text {
-        margin-top: 60px;
+      &__footer {
+        width: 200px;
+        bottom: -130px;
+        right: 3%;
       }
     }
   }
 
   @media screen and (min-width: 1300px) {
-    .es-benefits {
-      &__content {
-        padding: 0 52px;
-        margin-top: -308px;
-        min-height: 1100px;
-      }
-
-      &__title {
-        padding-top: 322px;
-        margin-bottom: 77px;
-        font-size: 40px;
-      }
-
-      &__list {
-        max-width: 700px;
-        padding-left: 16px;
-      }
-
-      &__item {
-        font-size: 28px;
-
-        &--strong {
-          font-size: 30px;
-        }
-
-        &:not(:last-child) {
-          margin-bottom: 34px;
-        }
-
-        &::marker {
-          font-size: 25px;
-        }
-      }
-
-      &__disclaimer {
-        margin-left: -14px;
-        font-size: 18px;
-      }
-    }
-
     .es-kv {
-      &__content {
-        max-width: 600px;
-      }
-      &__title {
-        max-width: 460px;
-        font-size: 38px;
-        margin-bottom: 25px;
-      }
+      margin-bottom: 400px;
 
-      &__description {
-        font-size: 30px;
-      }
-    }
-
-    .es-info {
-      padding-bottom: 115px;
-
-      &__title {
-        margin-left: -26px;
-        margin-bottom: 59px;
-        font-size: 40px;
-      }
-
-      &__content {
-        margin-top: -33px;
-      }
-
-      &__list {
-        gap: 20px;
-        margin-bottom: 86px;
-      }
-
-      &__item {
-        width: 436px;
-      }
-
-      &__item-text {
-        line-height: 1.15;
-        font-size: 30px;
-
-        &--short {
-          min-width: 300px;
+      &__packshot {
+        &--desktop {
+          right: 22%;
+          top: 12%;
         }
       }
 
-      &__icon {
-        margin-bottom: 37px;
-      }
-
-      &__disclaimer {
-        max-width: 700px;
-        margin: 0 auto;
-        font-size: 18px;
-        text-align: center;
-
-        &--short {
-          display: inline-block;
-        }
-      }
-    }
-
-    .es-design {
-      margin-top: -51px;
-      &__title {
-        margin-bottom: 40px;
-        font-size: 40px;
-      }
-
-      &__description {
-        font-size: 30px;
-
-        p {
-          padding-top: 7px;
-        }
-      }
-
-      &__content {
-        margin-top: -82px;
-        padding: 80px;
-        min-width: auto;
-      }
-    }
-
-    .es-components {
       &__container {
-        gap: 0;
+        margin-top: 172px;
+        width: 775px;
       }
-      &__item {
-        min-width: 250px;
+      &__title {
+        font-size: 52px;
       }
-
-      &__additional {
-        margin-bottom: 98px;
+      &__subtitle {
+        font-size: 26px;
       }
-    }
-
-    .es-video {
-      &__image-icon {
-        width: 106px;
-        height: 106px;
-      }
-    }
-
-    .additional-description {
-      margin-bottom: 50px;
-      font-size: 30px;
-    }
-
-    .button-primary {
-      padding: 16px 100px;
-      font-size: 26px;
     }
 
     .es-cross {
@@ -1294,6 +980,26 @@ $secondary: #f6f6f6;
       }
       &__card {
         width: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .es-kv {
+      &__packshot {
+        &--desktop {
+          right: 24%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    .es-kv {
+      &__packshot {
+        &--desktop {
+          right: 27%;
+        }
       }
     }
   }
