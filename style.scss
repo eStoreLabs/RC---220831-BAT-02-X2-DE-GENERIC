@@ -45,6 +45,18 @@
   font-style: italic;
 }
 
+/* Mont Black Italic */
+@font-face {
+  font-family: 'MontBlackItalic';
+  src: url('fonts/Mont-BlackItalic/Mont-BlackItalic.eot');
+  src: url('fonts/Mont-BlackItalic/Mont-BlackItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Mont-BlackItalic/Mont-BlackItalic.woff2') format('woff2'),
+    url('Mont-BlackItalic/Mont-BlackItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
 $regular: 'MontBook', Tahoma, Geneva, Verdana, sans-serif;
 $primary: #2a2c2c;
 $secondary: #f6f6f6;
@@ -65,6 +77,12 @@ $secondary: #f6f6f6;
   font-family: 'MontRegularItalic', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   font-weight: 400;
+}
+
+%text-black-italic {
+  font-family: 'MontBlackItalic', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 700;
 }
 
 %text-heavy {
@@ -216,7 +234,7 @@ $secondary: #f6f6f6;
       z-index: 1;
     }
     &__title {
-      @extend %text-heavy;
+      @extend %text-black-italic;
       margin-bottom: 0;
       line-height: 0.9;
       font-size: 22px;
@@ -307,7 +325,7 @@ $secondary: #f6f6f6;
     }
     &__title {
       padding-left: 5px;
-      @extend %text-heavy;
+      @extend %text-black-italic;
       line-height: 0.9;
       font-style: italic;
       font-size: 20px;
@@ -425,7 +443,7 @@ $secondary: #f6f6f6;
       @extend %img;
     }
     &__title {
-      @extend %text-heavy;
+      @extend %text-black-italic;
       font-style: italic;
       max-width: 185px;
       font-size: 25px;
@@ -500,51 +518,60 @@ $secondary: #f6f6f6;
     }
   }
 
-  .es-info {
-    margin-top: -20px;
-    padding-bottom: 40px;
-    &__content {
-      padding: 5px 25px;
+  .es-design {
+    &__pack-wrapper {
+      display: flex;
+      position: relative;
+      height: 300px;
+      // overflow: hidden;
+
+      &--first {
+        // background: url(./img/design-1.png) 35px top/ contain no-repeat;
+        // min-height: 500px;
+      }
+
+      &--second {
+        flex-direction: row-reverse;
+        margin-top: -83px;
+      }
+    }
+    &__group {
+      padding-left: 15px;
     }
     &__title {
-      margin-bottom: 10px;
-      font-size: 17.5px;
-      @extend %text;
-      @extend %text-italic;
-      text-transform: uppercase;
+      @extend %text-black-italic;
+      font-size: 22px;
+      margin-bottom: 5px;
     }
-    &__list {
+    &__description {
+      position: relative;
       margin: 0;
-      margin-bottom: 18px;
-      padding: 0;
-      padding-left: 14px;
-      line-height: 1.7;
-      font-size: 13px;
-      strong {
-        font-family: 'Mont Heavy', sans-serif;
-        font-weight: 900;
-      }
-      span {
-        margin-left: -4px;
-      }
-      sup {
-        font-size: 0.7em;
-      }
-    }
-    &__disclaimer {
-      @extend %text-italic;
-      margin-right: -8px;
-      font-size: 7.5px;
-    }
-    &__icon {
-      display: none;
-      width: 63px;
-      height: 63px;
-      margin-bottom: 15px;
-    }
-  }
+      max-width: 189px;
+      font-size: 14px;
+      z-index: 1;
 
-  .es-design {
+      &--second {
+        max-width: 170px;
+      }
+
+      &--red {
+        @extend %text-bold;
+        color: #e5451c;
+      }
+    }
+    &__image {
+      position: absolute;
+      @extend %img;
+
+      &--first {
+        right: -29px;
+        max-width: 108%;
+      }
+      &--second {
+        left: 0;
+        max-width: 50%;
+      }
+    }
   }
 
   .es-slider-parts {

@@ -30,31 +30,38 @@
   font-weight: 400;
   font-style: italic;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
+/* Mont Black Italic */
+@font-face {
+  font-family: "MontBlackItalic";
+  src: url("fonts/Mont-BlackItalic/Mont-BlackItalic.eot");
+  src: url("fonts/Mont-BlackItalic/Mont-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Mont-BlackItalic/Mont-BlackItalic.woff2") format("woff2"), url("Mont-BlackItalic/Mont-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
 }
-
-#glo-hyper-x2.glo-hyper-x2 .es-promo__item-title--bold, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__description--bold, #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span, #glo-hyper-x2.glo-hyper-x2 .button-primary {
+#glo-hyper-x2.glo-hyper-x2 .es-design__description--red, #glo-hyper-x2.glo-hyper-x2 .es-promo__item-title--bold, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__description--bold, #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span, #glo-hyper-x2.glo-hyper-x2 .button-primary {
   font-family: "MontBold", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
 }
 
-#glo-hyper-x2.glo-hyper-x2 .es-cross__title, #glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer, #glo-hyper-x2.glo-hyper-x2 .es-info__title, #glo-hyper-x2.glo-hyper-x2 .es-promo__disclaimer, #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title span {
+#glo-hyper-x2.glo-hyper-x2 .es-cross__title, #glo-hyper-x2.glo-hyper-x2 .es-promo__disclaimer, #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title span {
   font-family: "MontRegularItalic", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   font-weight: 400;
 }
 
-#glo-hyper-x2.glo-hyper-x2 .es-promo__title, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-title, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__title, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title, #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle, #glo-hyper-x2.glo-hyper-x2 .es-kv__title, #glo-hyper-x2.glo-hyper-x2 .additional-description strong, #glo-hyper-x2.glo-hyper-x2 .es-title-small, #glo-hyper-x2.glo-hyper-x2 .es-title {
+#glo-hyper-x2.glo-hyper-x2 .es-design__title, #glo-hyper-x2.glo-hyper-x2 .es-promo__title, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__title, #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
+  font-family: "MontBlackItalic", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-title, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title, #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle, #glo-hyper-x2.glo-hyper-x2 .additional-description strong, #glo-hyper-x2.glo-hyper-x2 .es-title-small, #glo-hyper-x2.glo-hyper-x2 .es-title {
   font-family: "MontHeavy", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 900;
 }
 
-#glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop, #glo-hyper-x2.glo-hyper-x2 .es-cross__img, #glo-hyper-x2.glo-hyper-x2 .es-promo__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-img, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image, #glo-hyper-x2.glo-hyper-x2 .es-kv__bg, #glo-hyper-x2.glo-hyper-x2 .es-kv__footer, #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img, #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
+#glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop, #glo-hyper-x2.glo-hyper-x2 .es-cross__img, #glo-hyper-x2.glo-hyper-x2 .es-design__image, #glo-hyper-x2.glo-hyper-x2 .es-promo__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-img, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image, #glo-hyper-x2.glo-hyper-x2 .es-kv__bg, #glo-hyper-x2.glo-hyper-x2 .es-kv__footer, #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img, #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -398,45 +405,45 @@
   font-size: 10px;
   text-transform: uppercase;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info {
-  margin-top: -20px;
-  padding-bottom: 40px;
+#glo-hyper-x2.glo-hyper-x2 .es-design__pack-wrapper {
+  display: flex;
+  position: relative;
+  height: 300px;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__content {
-  padding: 5px 25px;
+#glo-hyper-x2.glo-hyper-x2 .es-design__pack-wrapper--second {
+  flex-direction: row-reverse;
+  margin-top: -83px;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__title {
-  margin-bottom: 10px;
-  font-size: 17.5px;
-  text-transform: uppercase;
+#glo-hyper-x2.glo-hyper-x2 .es-design__group {
+  padding-left: 15px;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__list {
+#glo-hyper-x2.glo-hyper-x2 .es-design__title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+#glo-hyper-x2.glo-hyper-x2 .es-design__description {
+  position: relative;
   margin: 0;
-  margin-bottom: 18px;
-  padding: 0;
-  padding-left: 14px;
-  line-height: 1.7;
-  font-size: 13px;
+  max-width: 189px;
+  font-size: 14px;
+  z-index: 1;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__list strong {
-  font-family: "Mont Heavy", sans-serif;
-  font-weight: 900;
+#glo-hyper-x2.glo-hyper-x2 .es-design__description--second {
+  max-width: 170px;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__list span {
-  margin-left: -4px;
+#glo-hyper-x2.glo-hyper-x2 .es-design__description--red {
+  color: #e5451c;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__list sup {
-  font-size: 0.7em;
+#glo-hyper-x2.glo-hyper-x2 .es-design__image {
+  position: absolute;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__disclaimer {
-  margin-right: -8px;
-  font-size: 7.5px;
+#glo-hyper-x2.glo-hyper-x2 .es-design__image--first {
+  right: -29px;
+  max-width: 108%;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-info__icon {
-  display: none;
-  width: 63px;
-  height: 63px;
-  margin-bottom: 15px;
+#glo-hyper-x2.glo-hyper-x2 .es-design__image--second {
+  left: 0;
+  max-width: 50%;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-cross {
   margin-bottom: 50px;
