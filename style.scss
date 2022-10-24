@@ -79,7 +79,7 @@ $secondary: #f6f6f6;
   margin: 0 auto;
 }
 
-#glo-hyper-uniq.glo-hyper-uniq {
+#glo-hyper-x2.glo-hyper-x2 {
   font-family: $regular;
   font-size: 17.5px;
   font-weight: 400;
@@ -185,6 +185,7 @@ $secondary: #f6f6f6;
     // background-position: left;
     // min-height: 204px;
     min-height: 200px;
+    margin-bottom: 30px;
 
     &__header {
       display: flex;
@@ -257,6 +258,7 @@ $secondary: #f6f6f6;
 
   .es-benefits {
     &__container {
+      // margin-bottom: 30px;
       background: url('./img/benefits-bg.png') center 80px / contain no-repeat;
     }
     &__title {
@@ -299,6 +301,118 @@ $secondary: #f6f6f6;
   }
 
   .es-slider-about {
+    &__container {
+      display: flex;
+      position: relative;
+    }
+    &__title {
+      padding-left: 5px;
+      @extend %text-heavy;
+      line-height: 0.9;
+      font-style: italic;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      &--third,
+      &--fourth {
+        font-size: 15px;
+      }
+    }
+
+    &__description {
+      padding-left: 5px;
+      margin-bottom: 20px;
+      max-width: 242px;
+      font-size: 10px;
+
+      &--bold {
+        @extend %text-bold;
+      }
+
+      &--fifth {
+        max-width: 171px;
+      }
+    }
+    &__image {
+      @extend %img;
+      height: 200px;
+
+      &--first {
+        height: 222px;
+        position: absolute;
+        right: 0;
+        top: 65px;
+      }
+
+      &--second {
+        height: 278px;
+        position: absolute;
+        right: 7px;
+        top: 46px;
+      }
+
+      &--third {
+        height: 236px;
+        position: absolute;
+        right: -12px;
+        top: 10px;
+      }
+
+      &--fourth {
+        height: 378px;
+        position: absolute;
+        right: 4px;
+        top: 40px;
+      }
+
+      &--fifth {
+        height: 300px;
+        position: absolute;
+        right: 0px;
+        top: 63px;
+      }
+    }
+    &__list {
+      margin-top: 50px;
+      padding: 0;
+      padding-left: 10px;
+      list-style-type: none;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    &__item-img {
+      @extend %img;
+      margin: 0;
+      margin-right: 10px;
+      width: 30px;
+    }
+    &__item-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      @extend %text-heavy;
+      font-size: 12px;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+    &__inner {
+      &--third {
+        position: relative;
+        width: 202px;
+        padding-left: 15px;
+        margin-top: 53px;
+        z-index: 1;
+      }
+      &--fourth {
+        position: relative;
+        width: 202px;
+        padding-left: 15px;
+        margin-top: 55px;
+        z-index: 1;
+      }
+    }
   }
 
   .es-promo {
@@ -1028,14 +1142,21 @@ $secondary: #f6f6f6;
 
 .swiper-button-prev {
   // position: relative;
-  left: 0;
+  left: -5px !important;
   background: url('../img/arrow-right.png') no-repeat center;
+  height: 13px !important;
   transform: rotate(180deg);
 }
 .swiper-button-next {
   // position: relative;
-  right: 0;
+  right: 0 !important;
+  height: 13px !important;
   background: url('../img/arrow-right.png') no-repeat center;
+}
+
+.swiper-about-button-prev,
+.swiper-about-button-next {
+  top: 60% !important;
 }
 
 .swiperParts {
@@ -1054,4 +1175,8 @@ $secondary: #f6f6f6;
   top: 50%;
   right: 0;
   background: url('../img/arrow-right.png') no-repeat center;
+}
+
+.swiper-button-disabled {
+  display: none !important;
 }
