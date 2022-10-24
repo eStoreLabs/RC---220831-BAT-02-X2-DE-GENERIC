@@ -259,11 +259,11 @@
 }
 #glo-hyper-uniq.glo-hyper-uniq .es-cross__card-title {
   width: 127px;
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
 }
 #glo-hyper-uniq.glo-hyper-uniq .es-cross__button {
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 @media screen and (min-width: 320px) {
   #glo-hyper-uniq.glo-hyper-uniq .es-kv__title {
