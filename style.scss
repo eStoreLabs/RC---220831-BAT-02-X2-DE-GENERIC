@@ -290,7 +290,7 @@ $secondary: #f6f6f6;
   .es-benefits {
     &__container {
       // margin-bottom: 30px;
-      background: url('./img/benefits-bg.png') center 80px / contain no-repeat;
+      background: url('./img/benefits-bg.png') left 80px / contain no-repeat;
     }
     &__title {
       margin-bottom: 30px;
@@ -315,10 +315,15 @@ $secondary: #f6f6f6;
       margin-bottom: 20px;
 
       & span {
-        @extend %text-bold;
+        @extend %text-heavy;
+        font-style: italic;
         font-size: 14px;
         text-transform: uppercase;
       }
+    }
+    &__upper {
+      font-size: 0.6em;
+      margin-left: 3px;
     }
     &__list-icon {
       margin-right: 10px;
@@ -328,6 +333,10 @@ $secondary: #f6f6f6;
       padding: 0 15px;
       @extend %text-italic;
       font-size: 7px;
+    }
+    &__pack-img {
+      display: none;
+      @extend %img;
     }
   }
 
@@ -825,6 +834,38 @@ $secondary: #f6f6f6;
       }
     }
 
+    .es-benefits {
+      &__container {
+        background: none;
+        margin-bottom: 100px;
+      }
+      &__title {
+        margin-bottom: 50px;
+        font-size: 26px;
+      }
+      &__inner {
+        display: flex;
+      }
+      &__pack-img {
+        display: block;
+        width: auto;
+        width: 50%;
+      }
+      &__group {
+        margin-top: -40px;
+        flex: 50%;
+      }
+      &__list-item {
+        margin-bottom: 40px;
+        & span {
+          font-size: 20px;
+        }
+      }
+      &__disclaimer {
+        font-size: 12px;
+      }
+    }
+
     .es-cross {
       &__title {
         margin-top: 40px;
@@ -879,6 +920,14 @@ $secondary: #f6f6f6;
         }
       }
     }
+    .es-benefits {
+      &__inner {
+        margin-bottom: 50px;
+      }
+      &__disclaimer {
+        font-size: 15px;
+      }
+    }
   }
 
   @media screen and (min-width: 900px) {
@@ -890,6 +939,26 @@ $secondary: #f6f6f6;
       }
       &__title {
         font-size: 30px;
+      }
+    }
+
+    .es-benefits {
+      &__title {
+        font-size: 30px;
+        margin-bottom: 100px;
+      }
+      &__list-item {
+        margin-bottom: 50px;
+        & span {
+          font-size: 22px;
+        }
+      }
+      &__list-icon {
+        max-width: 65px;
+      }
+
+      &__disclaimer {
+        font-size: 18px;
       }
     }
   }
@@ -928,6 +997,22 @@ $secondary: #f6f6f6;
         right: 3%;
       }
     }
+
+    .es-benefits {
+      &__inner {
+        gap: 20px;
+      }
+      &__title {
+        font-size: 35px;
+        margin-bottom: 100px;
+      }
+      &__list-item {
+        margin-bottom: 50px;
+        & span {
+          font-size: 27px;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1300px) {
@@ -950,6 +1035,26 @@ $secondary: #f6f6f6;
       }
       &__subtitle {
         font-size: 26px;
+      }
+    }
+
+    .es-benefits {
+      &__inner {
+        gap: 20px;
+      }
+      &__title {
+        font-size: 42px;
+        margin-bottom: 125px;
+      }
+      &__list-item {
+        margin-bottom: 80px;
+        & span {
+          font-size: 33px;
+        }
+      }
+      &__disclaimer {
+        padding: 0px 38px;
+        font-size: 23px;
       }
     }
 
@@ -996,9 +1101,12 @@ $secondary: #f6f6f6;
 
   @media screen and (min-width: 1500px) {
     .es-kv {
+      &__title-img {
+        top: -32px;
+      }
       &__packshot {
         &--desktop {
-          right: 27%;
+          right: 30%;
         }
       }
     }

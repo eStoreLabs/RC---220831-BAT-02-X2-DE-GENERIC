@@ -38,7 +38,7 @@
   font-weight: 400;
   font-style: italic;
 }
-#glo-hyper-x2.glo-hyper-x2 .es-slider-parts__subtitle, #glo-hyper-x2.glo-hyper-x2 .es-design__description--red, #glo-hyper-x2.glo-hyper-x2 .es-promo__item-title--bold, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__description--bold, #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span, #glo-hyper-x2.glo-hyper-x2 .button-primary {
+#glo-hyper-x2.glo-hyper-x2 .es-slider-parts__subtitle, #glo-hyper-x2.glo-hyper-x2 .es-design__description--red, #glo-hyper-x2.glo-hyper-x2 .es-promo__item-title--bold, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__description--bold, #glo-hyper-x2.glo-hyper-x2 .button-primary {
   font-family: "MontBold", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
 }
@@ -55,13 +55,13 @@
   font-weight: 700;
 }
 
-#glo-hyper-x2.glo-hyper-x2 .es-slider-parts__title strong, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__number, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-title, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title, #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle, #glo-hyper-x2.glo-hyper-x2 .additional-description strong, #glo-hyper-x2.glo-hyper-x2 .es-title-small, #glo-hyper-x2.glo-hyper-x2 .es-title {
+#glo-hyper-x2.glo-hyper-x2 .es-slider-parts__title strong, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__number, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-title, #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span, #glo-hyper-x2.glo-hyper-x2 .es-benefits__title, #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle, #glo-hyper-x2.glo-hyper-x2 .additional-description strong, #glo-hyper-x2.glo-hyper-x2 .es-title-small, #glo-hyper-x2.glo-hyper-x2 .es-title {
   font-family: "MontHeavy", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 900;
 }
 
-#glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop, #glo-hyper-x2.glo-hyper-x2 .es-cross__img, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__bg, #glo-hyper-x2.glo-hyper-x2 .es-design__image, #glo-hyper-x2.glo-hyper-x2 .es-promo__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-img, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image, #glo-hyper-x2.glo-hyper-x2 .es-kv__bg, #glo-hyper-x2.glo-hyper-x2 .es-kv__footer, #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img, #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
+#glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop, #glo-hyper-x2.glo-hyper-x2 .es-cross__img, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__bg, #glo-hyper-x2.glo-hyper-x2 .es-design__image, #glo-hyper-x2.glo-hyper-x2 .es-promo__image, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-img, #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image, #glo-hyper-x2.glo-hyper-x2 .es-benefits__pack-img, #glo-hyper-x2.glo-hyper-x2 .es-kv__bg, #glo-hyper-x2.glo-hyper-x2 .es-kv__footer, #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img, #glo-hyper-x2.glo-hyper-x2 .es-kv__img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -217,7 +217,7 @@
   display: none;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__container {
-  background: url("./img/benefits-bg.png") center 80px/contain no-repeat;
+  background: url("./img/benefits-bg.png") left 80px/contain no-repeat;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
   margin-bottom: 30px;
@@ -239,8 +239,13 @@
   margin-bottom: 20px;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span {
+  font-style: italic;
   font-size: 14px;
   text-transform: uppercase;
+}
+#glo-hyper-x2.glo-hyper-x2 .es-benefits__upper {
+  font-size: 0.6em;
+  margin-left: 3px;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-icon {
   margin-right: 10px;
@@ -249,6 +254,9 @@
 #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
   padding: 0 15px;
   font-size: 7px;
+}
+#glo-hyper-x2.glo-hyper-x2 .es-benefits__pack-img {
+  display: none;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-slider-about__container {
   display: flex;
@@ -639,6 +647,35 @@
 #glo-hyper-x2.glo-hyper-x2 .es-cross__title {
     font-size: 26px;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__container {
+    background: none;
+    margin-bottom: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__inner {
+    display: flex;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__pack-img {
+    display: block;
+    width: auto;
+    width: 50%;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__group {
+    margin-top: -40px;
+    flex: 50%;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item {
+    margin-bottom: 40px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span {
+    font-size: 20px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
+    font-size: 12px;
+  }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__title {
     margin-top: 40px;
     max-width: 80%;
@@ -680,6 +717,12 @@
   #glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop {
     display: block;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__inner {
+    margin-bottom: 50px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 900px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv {
@@ -690,6 +733,22 @@
   }
   #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
     font-size: 30px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item {
+    margin-bottom: 50px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span {
+    font-size: 22px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-icon {
+    max-width: 65px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -723,6 +782,19 @@
     bottom: -130px;
     right: 3%;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__inner {
+    gap: 20px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
+    font-size: 35px;
+    margin-bottom: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item {
+    margin-bottom: 50px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span {
+    font-size: 27px;
+  }
 }
 @media screen and (min-width: 1300px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv {
@@ -741,6 +813,23 @@
   }
   #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle {
     font-size: 26px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__inner {
+    gap: 20px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__title {
+    font-size: 42px;
+    margin-bottom: 125px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item {
+    margin-bottom: 80px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span {
+    font-size: 33px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-benefits__disclaimer {
+    padding: 0px 38px;
+    font-size: 23px;
   }
   #glo-hyper-x2.glo-hyper-x2 .es-cross__img--desktop {
     margin-bottom: 120px;
@@ -774,8 +863,11 @@
   }
 }
 @media screen and (min-width: 1500px) {
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img {
+    top: -32px;
+  }
   #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
-    right: 27%;
+    right: 30%;
   }
 }
 
