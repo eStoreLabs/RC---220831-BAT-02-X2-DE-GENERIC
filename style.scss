@@ -198,10 +198,6 @@ $secondary: #f6f6f6;
   }
 
   .es-kv {
-    // background: url('img/kv-bg.png') no-repeat;
-    // background-size: contain;
-    // background-position: left;
-    // min-height: 204px;
     min-height: 200px;
     margin-bottom: 30px;
 
@@ -289,7 +285,6 @@ $secondary: #f6f6f6;
 
   .es-benefits {
     &__container {
-      // margin-bottom: 30px;
       background: url('./img/benefits-bg.png') left 80px / contain no-repeat;
     }
     &__title {
@@ -561,11 +556,8 @@ $secondary: #f6f6f6;
       display: flex;
       position: relative;
       height: 245px;
-      // overflow: hidden;
 
       &--first {
-        // background: url(./img/design-1.png) 35px top/ contain no-repeat;
-        // min-height: 500px;
       }
 
       &--second {
@@ -731,7 +723,6 @@ $secondary: #f6f6f6;
   @media screen and (min-width: 320px) {
     .es-kv {
       &__title {
-        // font-size: 15px;
       }
       &__content {
         margin-left: 10px;
@@ -779,7 +770,6 @@ $secondary: #f6f6f6;
   @media screen and (min-width: 468px) {
     .es-kv {
       &__container {
-        // width: auto;
       }
       &__title {
         font-size: 25px;
@@ -1634,7 +1624,6 @@ $secondary: #f6f6f6;
           display: block;
           width: auto;
           height: auto;
-          // top: 200px;
         }
       }
     }
@@ -1743,14 +1732,12 @@ $secondary: #f6f6f6;
 }
 
 .swiper-button-prev {
-  // position: relative;
   left: -5px !important;
   background: url('../img/arrow-right.png') no-repeat center;
   height: 13px !important;
   transform: rotate(180deg);
 }
 .swiper-button-next {
-  // position: relative;
   right: 0 !important;
   height: 13px !important;
   background: url('../img/arrow-right.png') no-repeat center;
@@ -1766,14 +1753,12 @@ $secondary: #f6f6f6;
 }
 
 .swiperParts-button-prev {
-  // position: relative;
   top: 50%;
   left: 0;
   background: url('../img/arrow-right.png') no-repeat center;
   transform: rotate(180deg);
 }
 .swiperParts-button-next {
-  // position: relative;
   top: 50%;
   right: 0;
   background: url('../img/arrow-right.png') no-repeat center;
@@ -1789,7 +1774,6 @@ $secondary: #f6f6f6;
     background: url('../img/arrow-right-d.png') no-repeat center;
   }
   .swiper-button-next {
-    // position: relative;
     background: url('../img/arrow-right-d.png') no-repeat center;
     height: 40px !important;
   }
