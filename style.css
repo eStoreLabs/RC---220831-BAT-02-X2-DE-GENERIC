@@ -465,6 +465,9 @@
 #glo-hyper-x2.glo-hyper-x2 .es-design__image {
   position: absolute;
 }
+#glo-hyper-x2.glo-hyper-x2 .es-design__image--desktop {
+  display: none;
+}
 #glo-hyper-x2.glo-hyper-x2 .es-design__image--first {
   right: -29px;
   max-width: 108%;
@@ -585,6 +588,16 @@
   #glo-hyper-x2.glo-hyper-x2 .es-kv__footer {
     bottom: -125px;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__container {
+    margin-bottom: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__pack-wrapper--second {
+    margin-top: 70px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 220px;
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 468px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
@@ -655,6 +668,16 @@
   #glo-hyper-x2.glo-hyper-x2 .es-cross__container {
     gap: 100px;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__pack-wrapper--second {
+    margin-top: 100px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 250px;
+    font-size: 18px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__image--first {
+    right: -51px;
+  }
 }
 @media screen and (min-width: 576px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv {
@@ -670,6 +693,23 @@
 @media screen and (min-width: 650px) {
   #glo-hyper-x2.glo-hyper-x2 .es-cross__container {
     gap: 125px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__image--first {
+    right: -70px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__group {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__container {
+    margin-bottom: 175px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__pack-wrapper--second {
+    margin-top: 150px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 300px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -828,6 +868,16 @@
   }
   #glo-hyper-x2.glo-hyper-x2 .es-promo__list {
     gap: 5px 30px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__container {
+    margin-bottom: 300px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__title {
+    font-size: 35px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 418px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1002,6 +1052,28 @@
   #glo-hyper-x2.glo-hyper-x2 .es-promo__list--desktop {
     display: flex;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-design {
+    height: 1300px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__image {
+    display: none;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__image--first {
+    margin-top: -220px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__image--desktop {
+    display: block;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__group {
+    padding-left: 115px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 500px;
+    font-size: 28px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description--second {
+    margin-top: 323px;
+  }
 }
 @media screen and (min-width: 1300px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv {
@@ -1102,6 +1174,12 @@
   #glo-hyper-x2.glo-hyper-x2 .es-cross__card {
     width: auto;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description {
+    max-width: 593px;
+  }
+  #glo-hyper-x2.glo-hyper-x2 .es-design__description--second {
+    margin-top: 383px;
+  }
 }
 @media screen and (min-width: 1400px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
@@ -1112,6 +1190,11 @@
   #glo-hyper-x2.glo-hyper-x2 .es-kv__title-img {
     top: -32px;
   }
+  #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
+    right: 24%;
+  }
+}
+@media screen and (min-width: 1700px) {
   #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
     right: 30%;
   }
