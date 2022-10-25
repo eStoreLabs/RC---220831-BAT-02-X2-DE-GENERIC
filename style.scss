@@ -141,6 +141,10 @@ $secondary: #f6f6f6;
     font-style: normal;
   }
 
+  img {
+    max-height: none;
+  }
+
   .es-title {
     @extend %text-heavy;
     font-style: normal;
@@ -198,6 +202,7 @@ $secondary: #f6f6f6;
   }
 
   .es-kv {
+    position: relative;
     min-height: 200px;
     margin-bottom: 30px;
 
@@ -1131,6 +1136,7 @@ $secondary: #f6f6f6;
           position: absolute;
           display: block;
           max-width: 70%;
+          max-height: none;
         }
       }
       &__packshot {
@@ -1748,7 +1754,8 @@ $secondary: #f6f6f6;
   top: 60% !important;
 }
 
-.swiperParts {
+.swiperParts,
+.es-slider-about {
   position: relative;
 }
 

@@ -106,6 +106,9 @@
   font-weight: 900;
   font-style: normal;
 }
+#glo-hyper-x2.glo-hyper-x2 img {
+  max-height: none;
+}
 #glo-hyper-x2.glo-hyper-x2 .es-title {
   font-style: normal;
   text-transform: uppercase;
@@ -147,6 +150,7 @@
   padding: 0 25px;
 }
 #glo-hyper-x2.glo-hyper-x2 .es-kv {
+  position: relative;
   min-height: 200px;
   margin-bottom: 30px;
 }
@@ -888,6 +892,7 @@
     position: absolute;
     display: block;
     max-width: 70%;
+    max-height: none;
   }
   #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
     position: absolute;
@@ -1398,7 +1403,8 @@
   top: 60% !important;
 }
 
-.swiperParts {
+.swiperParts,
+.es-slider-about {
   position: relative;
 }
 

@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="glo-hyper-x2" id="glo-hyper-x2">
@@ -305,7 +306,7 @@
         <div class="es-promo__wrapper">
           <img
             class="es-promo__image"
-            src="./img/promo-bg.png"
+            src="https://estorelabs.github.io/RC---220831-BAT-02-X2-DE-GENERIC/img/promo-bg.png"
             alt="X2 promo"
           />
           <div class="es-promo__container">
@@ -714,30 +715,31 @@
         </div>
       </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
-        autoplay: {
-          delay: 5000,
-        },
+      document.addEventListener('DOMContentLoaded', function (event) {
+        const swiper = new Swiper('.swiper', {
+          autoplay: {
+            delay: 5000,
+          },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
 
-      const swiperParts = new Swiper('.swiperParts', {
-        autoplay: {
-          delay: 5000,
-        },
+        const swiperParts = new Swiper('.swiperParts', {
+          autoplay: {
+            delay: 5000,
+          },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
       });
     </script>
   </body>
