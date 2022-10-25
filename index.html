@@ -56,8 +56,8 @@
           </h3>
           <div class="es-benefits__inner">
             <img
-              class="es-benefits__pack-img"
-              src="./img/benefits-pack.png"
+              class="es-benefits__pack-img es-benefits__pack-img--desktop"
+              src="./img/benefits-pack-d.png"
               alt=" "
             />
             <div class="es-benefits__group">
@@ -218,7 +218,9 @@
             </div>
             <div class="es-slider-about__container swiper-slide">
               <div class="es-slider-about__inner es-slider-about__inner--third">
-                <p class="es-slider-about__title es-slider-about__title--third">
+                <p
+                  class="es-slider-about__title es-slider-about__title--third es-slider-about__title--small"
+                >
                   Bequemer Boost
                 </p>
                 <p class="es-slider-about__description">
@@ -243,7 +245,7 @@
                 class="es-slider-about__inner es-slider-about__inner--fourth"
               >
                 <p
-                  class="es-slider-about__title es-slider-about__title--fourth"
+                  class="es-slider-about__title es-slider-about__title--fourth es-slider-about__title--small"
                 >
                   IRIS SHUTTER ÖFFNUNG
                 </p>
@@ -270,7 +272,9 @@
             </div>
             <div class="es-slider-about__container swiper-slide">
               <div class="es-slider-about__inner es-slider-about__inner--third">
-                <p class="es-slider-about__title">LED DISPLAY</p>
+                <p class="es-slider-about__title es-slider-about__title--small">
+                  LED DISPLAY
+                </p>
                 <p
                   class="es-slider-about__description es-slider-about__description--fifth"
                 >
@@ -502,6 +506,11 @@
           src="./img/slider-parts-bg.png"
           alt="background image"
         />
+        <img
+          class="es-slider-parts__bg es-slider-parts__bg--desktop"
+          src="./img/slider-parts-bg.png"
+          alt="background image"
+        />
         <div class="es-slider-parts__slider swiperParts">
           <div class="swiper-wrapper">
             <div class="es-slider-parts__container swiper-slide">
@@ -517,13 +526,18 @@
                   neo<sup>TM</sup> stick EINSTECKEN
                 </p>
                 <p class="es-slider-parts__description">
-                  Schiebeverschluss öffnen und neo™ stick bis zur farbigen Linie
-                  in den dafür vorgesehenen Heizkanal einsetzen.
+                  Schiebeverschluss öffnen und neo<sup>TM</sup> stick bis zur
+                  farbigen inie in den dafür vorgesehenen Heizkanal einsetzen.
                 </p>
               </div>
               <img
                 class="es-slider-parts__image"
                 src="./img/how-to-slide-1.png"
+                alt="MAKE IT YOUR WAY"
+              />
+              <img
+                class="es-slider-parts__image es-slider-parts__image--desktop es-slider-parts__image--first"
+                src="./img/how-to-slide-1-d.png"
                 alt="MAKE IT YOUR WAY"
               />
             </div>
@@ -549,6 +563,12 @@
                 src="./img/how-to-slide-2.png"
                 alt="MODUS WÄHLEN"
               />
+
+              <img
+                class="es-slider-parts__image es-slider-parts__image--desktop"
+                src="./img/how-to-slide-2-d.png"
+                alt="MODUS WÄHLEN"
+              />
             </div>
             <div class="es-slider-parts__container swiper-slide">
               <div class="es-slider-parts__inner">
@@ -571,6 +591,11 @@
                 src="./img/how-to-slide-3.png"
                 alt="AUFHEIZEN ABWARTEN"
               />
+              <img
+                class="es-slider-parts__image es-slider-parts__image--desktop"
+                src="./img/how-to-slide-3-d.png"
+                alt="AUFHEIZEN ABWARTEN"
+              />
             </div>
             <div class="es-slider-parts__container swiper-slide">
               <div class="es-slider-parts__inner">
@@ -584,7 +609,8 @@
                 <p class="es-slider-parts__subtitle">ENDE DER SESSION</p>
                 <p class="es-slider-parts__description">
                   Kurz vor Ende kündigt eine erneute Vibration die letzten Züge
-                  an. Sobald die Anzeige erlischt, neo<sup>TM</sup> stick
+                  an. Sobald die Anzeige erlischt,
+                  <strong>neo<sup>TM</sup> stick</strong>
                   entsorgen und Iris-verschluss schließen.
                 </p>
               </div>
@@ -592,6 +618,12 @@
               <img
                 class="es-slider-parts__image"
                 src="./img/how-to-slide-4.png"
+                alt="AUFHEIZEN ABWARTEN"
+              />
+
+              <img
+                class="es-slider-parts__image es-slider-parts__image--desktop"
+                src="./img/how-to-slide-4-d.png"
                 alt="AUFHEIZEN ABWARTEN"
               />
             </div>
@@ -701,7 +733,7 @@
         // Optional parameters
         // loop: true,
         autoplay: {
-          delay: 3000,
+          delay: 5000,
         },
 
         // Navigation arrows
@@ -714,6 +746,9 @@
       const swiperParts = new Swiper('.swiperParts', {
         // Optional parameters
         // loop: true,
+        autoplay: {
+          delay: 5000,
+        },
 
         // Navigation arrows
         navigation: {
