@@ -1755,13 +1755,13 @@ $secondary: #f6f6f6;
 .swiperParts-button-prev {
   top: 50%;
   left: 0;
-  background: url('../img/arrow-right.png') no-repeat center;
+  background: url('./img/arrow-right.png') no-repeat center;
   transform: rotate(180deg);
 }
 .swiperParts-button-next {
   top: 50%;
   right: 0;
-  background: url('../img/arrow-right.png') no-repeat center;
+  background: url('./img/arrow-right.png') no-repeat center;
 }
 
 .swiper-button-disabled {
@@ -1771,10 +1771,10 @@ $secondary: #f6f6f6;
 @media screen and (min-width: 1300px) {
   .swiper-button-prev {
     height: 40px !important;
-    background: url('../img/arrow-right-d.png') no-repeat center;
+    background: url('./img/arrow-right-d.png') no-repeat center;
   }
   .swiper-button-next {
-    background: url('../img/arrow-right-d.png') no-repeat center;
+    background: url('./img/arrow-right-d.png') no-repeat center;
     height: 40px !important;
   }
 }
