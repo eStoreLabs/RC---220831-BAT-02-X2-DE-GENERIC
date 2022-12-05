@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glo Hyper X2</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -22,7 +21,7 @@
         font-weight: 700;
         font-style: normal;
       }
-      /* Mont Boook */
+      /* Mont Book */
       @font-face {
         font-family: 'MontBook';
         src: url('fonts/Mont-Book/Mont-Book.eot');
@@ -128,7 +127,7 @@
       }
 
       #glo-hyper-x2.glo-hyper-x2 {
-        font-family: 'MontBook', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Mont', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 17.5px;
         font-weight: 400;
         line-height: 1.2;
@@ -214,7 +213,7 @@
         padding: 0 25px;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-kv {
-        /* position: relative; */
+        position: relative;
         min-height: 200px;
         margin-bottom: 30px;
       }
@@ -1446,7 +1445,7 @@
       }
       @media screen and (min-width: 1700px) {
         #glo-hyper-x2.glo-hyper-x2 .es-kv__packshot--desktop {
-          right: 30%;
+          right: 23%;
         }
       }
 
@@ -2230,30 +2229,30 @@
         </div>
       </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
-        autoplay: {
-          delay: 5000,
-        },
+      require(['swiper'], function (Swiper) {
+        const swiper = new Swiper('.swiper', {
+          autoplay: {
+            delay: 5000,
+          },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        const swiperParts = new Swiper('.swiperParts', {
+          autoplay: {
+            delay: 5000,
+          },
 
-      const swiperParts = new Swiper('.swiperParts', {
-        autoplay: {
-          delay: 5000,
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
       });
     </script>
   </body>
