@@ -371,6 +371,7 @@
       }
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image--first {
         height: 222px;
+        /* max-height: none !important; */
         position: absolute;
         right: 0;
         top: 65px;
@@ -425,6 +426,7 @@
         font-style: italic;
         text-transform: uppercase;
       }
+
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner--third {
         position: relative;
         width: 202px;
@@ -461,6 +463,8 @@
       }
       #glo-hyper-x2.glo-hyper-x2 .es-promo__list {
         display: flex;
+        position: relative;
+        z-index: 3;
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 440px;
@@ -470,6 +474,8 @@
       }
       #glo-hyper-x2.glo-hyper-x2 .es-promo__list--desktop {
         display: none;
+        position: relative;
+        z-index: 3;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-promo__item {
         display: flex;
@@ -595,11 +601,13 @@
       }
       #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__subtitle {
         margin-bottom: 5px;
+        padding-left: 20px;
         font-style: italic;
         font-size: 15px;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-slider-parts__description {
         margin: 0;
+        padding-left: 20px;
         max-width: 200px;
         font-size: 10px;
       }
@@ -1459,6 +1467,20 @@
         }
       }
 
+      /* .swiper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      } */
+
+      /* .swiper-slide {
+        overflow: hidden;
+      } */
+
+      .swiper__first {
+        padding-top: 20px !important;
+        margin-bottom: 20px !important;
+      }
+
       .swiper-button-prev::after,
       .swiper-button-next::after {
         display: none;
@@ -1650,7 +1672,7 @@
       </section>
 
       <section class="es-slider-about">
-        <div class="swiper">
+        <div class="swiper swiper__first">
           <div class="swiper-wrapper">
             <div class="es-slider-about__container swiper-slide">
               <div class="es-slider-about__inner">
@@ -1821,8 +1843,8 @@
               />
             </div>
           </div>
-          <div class="swiper-button-prev swiper-about-button-prev"></div>
-          <div class="swiper-button-next swiper-about-button-next"></div>
+          <!-- <div class="swiper-button-prev swiper-about-button-prev"></div>
+          <div class="swiper-button-next swiper-about-button-next"></div> -->
         </div>
       </section>
 
@@ -2242,21 +2264,15 @@
     <script>
       require(['swiper'], function (Swiper) {
         const swiper = new Swiper('.swiper', {
-          autoplay: {
-            delay: 5000,
-          },
-
           // Navigation arrows
+          observer: true,
+          observeParents: true,
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
         });
         const swiperParts = new Swiper('.swiperParts', {
-          autoplay: {
-            delay: 5000,
-          },
-
           // Navigation arrows
           navigation: {
             nextEl: '.swiper-button-next',
