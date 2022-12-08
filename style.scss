@@ -352,8 +352,10 @@ $secondary: #f6f6f6;
       position: relative;
     }
     &__title {
-      padding-left: 5px;
       @extend %text-black-italic;
+      padding-left: 5px;
+      margin-top: 44px;
+      margin-bottom: 44px;
       line-height: 0.9;
       font-style: italic;
       font-size: 20px;
@@ -459,6 +461,14 @@ $secondary: #f6f6f6;
         z-index: 1;
       }
       &--fourth {
+        position: relative;
+        width: 202px;
+        padding-left: 15px;
+        margin-top: 55px;
+        z-index: 1;
+      }
+
+      &--fifth {
         position: relative;
         width: 202px;
         padding-left: 15px;
@@ -746,7 +756,7 @@ $secondary: #f6f6f6;
       margin-bottom: 100px;
 
       &__container {
-        margin-left: 15%;
+        margin-left: 14%;
       }
 
       &__footer {
@@ -1633,6 +1643,14 @@ $secondary: #f6f6f6;
 
         &--third {
           margin-top: 180px;
+        }
+
+        &--fourth {
+          margin-top: 180px;
+        }
+
+        &--fifth {
+          margin-top: 120px;
         }
       }
       &__list {
