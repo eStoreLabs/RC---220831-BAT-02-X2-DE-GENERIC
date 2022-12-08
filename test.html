@@ -97,6 +97,8 @@
       #glo-hyper-x2.glo-hyper-x2 .es-promo__item-title--bold,
       #glo-hyper-x2.glo-hyper-x2 .es-promo__title,
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__title,
+      #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle,
+      #glo-hyper-x2.glo-hyper-x2 .es-kv__title span,
       #glo-hyper-x2.glo-hyper-x2 .es-kv__title {
         font-family: 'MontBlackItalic', Tahoma, Geneva, Verdana, sans-serif;
         font-style: italic;
@@ -108,7 +110,6 @@
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__item-title,
       #glo-hyper-x2.glo-hyper-x2 .es-benefits__list-item span,
       #glo-hyper-x2.glo-hyper-x2 .es-benefits__title,
-      #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle,
       #glo-hyper-x2.glo-hyper-x2 .additional-description strong,
       #glo-hyper-x2.glo-hyper-x2 .es-title-small,
       #glo-hyper-x2.glo-hyper-x2 .es-title {
@@ -265,6 +266,7 @@
         text-align: center;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-kv__subtitle {
+        font-style: italic;
         font-size: 10.8px;
         color: #fff;
       }
@@ -377,7 +379,7 @@
         top: 65px;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__image--second {
-        max-height: 278px;
+        height: 278px;
         position: absolute;
         right: 7px;
         top: 46px;
@@ -431,7 +433,7 @@
         position: relative;
         width: 202px;
         padding-left: 15px;
-        margin-top: 53px;
+        margin-top: 80px;
         z-index: 1;
       }
       #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner--fourth {
@@ -931,6 +933,9 @@
           width: 350px;
           padding-left: 60px;
         }
+        #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner--third {
+          margin-top: 120px;
+        }
         #glo-hyper-x2.glo-hyper-x2 .es-slider-about__list {
           padding-left: 60px;
         }
@@ -1002,6 +1007,14 @@
         #glo-hyper-x2.glo-hyper-x2 .es-promo__wrapper {
           display: flex;
           gap: 20px;
+        }
+        #glo-hyper-x2.glo-hyper-x2 .es-promo__container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        #glo-hyper-x2.glo-hyper-x2 .es-promo__title {
+          margin-top: 0;
         }
         #glo-hyper-x2.glo-hyper-x2 .es-promo__item {
           gap: 10px;
@@ -1079,6 +1092,9 @@
         #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner {
           width: 450px;
           padding-left: 100px;
+        }
+        #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner--third {
+          margin-top: 140px;
         }
         #glo-hyper-x2.glo-hyper-x2 .es-slider-about__list {
           padding-left: 100px;
@@ -1373,6 +1389,9 @@
         #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner {
           width: 633px;
           padding-left: 100px;
+        }
+        #glo-hyper-x2.glo-hyper-x2 .es-slider-about__inner--third {
+          margin-top: 180px;
         }
         #glo-hyper-x2.glo-hyper-x2 .es-slider-about__list {
           margin-top: 100px;
@@ -1674,20 +1693,20 @@
       <section class="es-slider-about">
         <div class="swiper swiper__first">
           <div class="swiper-wrapper">
-            <!-- <div class="es-slider-about__container swiper-slide">
+            <div class="es-slider-about__container swiper-slide">
               <div class="es-slider-about__inner">
                 <p class="es-slider-about__title">
                   MAKE IT <br />
                   YOUR WAY
                 </p>
                 <p class="es-slider-about__description">
-                  Für alle, die über grenzen hinausblicken und die momente zu
+                  Für alle, die über grenzen hinausblicken und die Momente zu
                   ihren machen: <br /><br />
                   An alle, die das wirklich persönliche suchen und ihren
-                  einzigartigen stil zum ausdruck bringen. <br /><br />
-                  Für alle, die sich totale zufriedenheit wünschen und sich die
-                  stimmung zu eigen machen. <br /><br />
-                  Die antwort liegt in euren händen.
+                  einzigartigen Stil zum ausdruck bringen. <br /><br />
+                  Für alle, die sich totale Zufriedenheit wünschen und sich die
+                  Stimmung zu eigen machen. <br /><br />
+                  Die Antwort liegt in euren Händen.
                 </p>
               </div>
               <img
@@ -1700,7 +1719,7 @@
                 src="	https://estorelabs.github.io/RC---220831-BAT-02-X2-DE-GENERIC/img/benefits-slide-1-d.png"
                 alt="MAKE IT YOUR WAY"
               />
-            </div> -->
+            </div>
             <div class="es-slider-about__container swiper-slide">
               <ul class="es-slider-about__list">
                 <li class="es-slider-about__item">
@@ -2040,7 +2059,7 @@
                   >glo<sup>TM</sup> hyper X2</span
                 >
                 die Farbvielfalt, die du suchst, um deinen individuellen Stil
-                uszudrücken.
+                auszudrücken.
               </p>
             </div>
           </div>
@@ -2074,7 +2093,7 @@
                 </p>
                 <p class="es-slider-parts__description">
                   Schiebeverschluss öffnen und neo<sup>TM</sup> stick bis zur
-                  farbigen inie in den dafür vorgesehenen Heizkanal einsetzen.
+                  farbigen Linie in den dafür vorgesehenen Heizkanal einsetzen.
                 </p>
               </div>
               <img
